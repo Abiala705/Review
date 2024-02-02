@@ -60,7 +60,7 @@ console.log(job);
 
 lastName = 'Schedtmann';
 console.log(lastName);
-*/
+
 
 
 // math operators
@@ -91,3 +91,64 @@ console.log(x);
 
 // Comparison operators
 console.log(ageJonas <= ageSarah);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2019);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y)
+
+const averageAge = (ageJonas + ageSarah) / 2
+
+
+// Coding challenge 1
+
+// // Data 1
+// const heightMark = 1.69;
+// const heightJohn = 1.95;
+
+// const massMark = 78;
+// const massJohn = 92;
+
+// Data 2
+// const heightMark = 1.88;
+// const heightJohn = 1.76;
+
+// const massMark = 95;
+// const massJohn = 85;
+
+// const bmiMark = massMark / (heightMark ** 2);
+// const bmiJohn = massJohn / (heightJohn ** 2);
+
+// const markHigherBMI = bmiMark > bmiJohn;
+
+// console.log(bmiMark, bmiJohn);
+// console.log(markHigherBMI);
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+
+console.log(jonas)
+
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(jonasNew);
+
+console.log(`Just a regular string`)
+
+console.log(`String with
+multiple
+lines`);
+
+*/
+
+
+const age = 19;
+const isOldEnough = age >= 18;
+
