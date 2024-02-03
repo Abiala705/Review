@@ -222,7 +222,7 @@ if (height) {
     console.log('Height is UNDEFINED')
 }
 
-*/
+
 
 // Equality variables
 
@@ -237,5 +237,151 @@ console.log(typeof (favourite));
 
 if (favourite === 23) {
     console.log('Cool! 23 is an amazing number.')
+} else if (favourite === 7) {
+    console.log('7 is also a cool number.')
+} else (
+    console.log('Number is not 23 or 7.')
+)
+
+if (favourite !== 23) {
+    console.log('Why not 23?')
 }
+
+
+
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log('Sarah is able to drive.')
+// } else {
+//     console.log('Someone else should drive...')
+// }
+
+
+const isTired = false;
+console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive.')
+} else {
+    console.log('Someone else should drive...')
+}
+
+
+
+// Coding challenge 3
+
+// Data 1
+// const dolphinsScores = 95 + 108 + 89;
+// const koalasScores = 88 + 91 + 110;
+
+// Data 2
+// const dolphinsScores = 97 + 112 + 101;
+// const koalasScores = 109 + 95 + 123;
+
+// Data 3
+const dolphinsScores = 97 + 92 + 101;
+const koalasScores = 109 + 81 + 106;
+
+const dolphinsAverage = dolphinsScores / 3;
+const koalasAverage = koalasScores / 3;
+
+const dolphinsGreater = dolphinsAverage >= 100;
+const koalasGreater = koalasAverage >= 100;
+console.log(dolphinsAverage, koalasAverage);
+
+if ((dolphinsAverage > koalasAverage) && dolphinsGreater) {
+    console.log('Dolphins are the winner of the competition.')
+} else if ((dolphinsAverage < koalasAverage) && koalasGreater) {
+    console.log('Koalas are the winner of the competition.')
+} else if ((dolphinsAverage === koalasAverage) && koalasGreater && dolphinsGreater) {
+    console.log('The game ends in a draw!')
+} else {
+    console.log('No one wins the trophy.')
+}
+
+
+// Switch statement
+
+
+const day = 'sunday';
+
+// switch (day) {
+//     case 'monday': // day === 'monday'
+//         console.log('Plan course structure.');
+//         console.log('Go to coding meetup.');
+//         break;
+//     case 'tuesday':
+//         console.log('Prepare theory videos');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write code examples.');
+//         break;
+//     case 'friday':
+//         console.log('Record videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Enjoy the weekend.');
+//         break;
+//     default:
+//         console.log('Not a valid day!');
+//         break;
+// }
+
+// Without the break, the code continues executing.
+
+if (day === 'monday') {
+    console.log('Plan course structure.');
+    console.log('Go to coding meetup.');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples.');
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend.');
+} else {
+    console.log('Not a valid day!');
+}
+
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+console.log(`I'm ${2037 - 1991} years old.`)
+*/
+
+
+const age = 23;
+
+age >= 18 ? console.log('I like to drink wine🍷') : console.log('I like to drink water.💧');
+
+// Ternary operator just like any other operator produces a value which can be stored in a variable. It is divided into three parts which is the condition and the results based on the boolean values; true or false.
+
+// It is an expression that produces a value.
+
+const drink = age >= 18 ? 'wine🍷' : 'water💧';
+
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine🍷';
+} else {
+    drink2 = 'water💧'
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine🍷' : 'water💧'}`)
 
